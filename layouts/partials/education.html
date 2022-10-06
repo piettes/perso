@@ -1,0 +1,8 @@
+{{- range site.Pages -}}
+    {{ if and (.IsPage) (eq .Type "education")}}
+        {{.Params.year}} <b>{{.Title}}</b> {{.Params.where}}
+        <br/>
+            {{.Content}}
+        <br/>
+    {{end}}
+{{end}}

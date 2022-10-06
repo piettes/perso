@@ -1,3 +1,32 @@
-baseURL: http://example.org/
+baseURL: http://stephanepiette.com/
 languageCode: en-us
-title: My New Hugo Site
+title: Stéphane Piette
+theme: "PaperMod"
+params:
+  profileMode:
+    enabled: true
+    title: Stéphane Piette
+    subtitle: "Software Engineer"
+    subtitle2: "Berlin, Germany"
+  socialIcons:
+    - name: stackoverflow
+      url: "https://stackoverflow.com/users/709863/st%c3%a9phane-piette"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/st%C3%A9phane-piette-16262226/"
+    - name: github
+      url: "https://github.com/piettes"
+    - name: soundcloud
+      url: "https://soundcloud.com/stralauersoundsystem"
+    - name: strava
+      url: "https://www.strava.com/athletes/52513601"
+  custom_css: ["css/custom.css"]
+menu:
+  main:
+    - identifier: CV
+      name: CV
+      url: /cv/
+      weight: 15
+    - identifier: cert
+      name: cert
+      url: /certifications/
+      weight: 15

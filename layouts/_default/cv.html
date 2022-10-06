@@ -1,0 +1,30 @@
+{{- define "main" }}
+    <div class="cv">
+
+        {{- partial "index_profile.html" . -}}
+
+        <h2>Skills</h2>
+        <br/>
+        {{- partial "skills.html" . -}}
+        <br/>
+
+        <h2>Work Experience</h2>
+        <br/>
+        {{- partial "experience.html" . -}}
+        <br/>
+
+        <h2>Certifications</h2>
+        <br/>
+        {{- partial "certifications.html" . -}}
+        <br/>
+
+        <h2>Education</h2>
+        <br/>
+        {{- partial "education.html" . -}}
+        <br/>
+
+    </div>
+
+    {{.Content}}
+
+{{- end }}{{- /* end main */ -}}

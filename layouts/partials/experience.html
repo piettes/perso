@@ -1,0 +1,9 @@
+{{- range site.Pages -}}
+    {{ if and (.IsPage) (eq .Type "experiences")}}
+        <b>{{.Title}} @ {{.Params.company}}</b>
+        <br/>
+        {{.Params.dates}}, {{.Params.place}}
+        <br/>
+        <br/>
+    {{end}}
+{{end}}

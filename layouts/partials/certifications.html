@@ -1,0 +1,6 @@
+{{- range site.Pages -}}
+    {{ if and (.IsPage) (eq .Type "certifications")}}
+        {{.Params.year}} <b>{{.Title}}</b> <a href="{{.Params.link}}" target="_blank">{{.Params.where}}</a>
+        <br/>
+    {{end}}
+{{end}}
