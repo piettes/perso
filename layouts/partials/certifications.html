@@ -1,6 +1,17 @@
 {{- range site.Pages -}}
     {{ if and (.IsPage) (eq .Type "certifications")}}
-        {{.Params.year}} <b>{{.Title}}</b> <a href="{{.Params.link}}" target="_blank">{{.Params.where}}</a>
-        <br/>
+        <article class="post-entry">
+            <div class="my-flex">
+                <div class="my-icon">
+                    <img src="{{.Params.icon  | absURL }}" alt="icon for {{.Params.where}} "/>
+                </div>
+                <div>
+                    <b>{{.Title}}</b>
+                    <br/>
+                    {{.Params.year}}
+                </div>
+            </div>
+            <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+        </article>
     {{end}}
 {{end}}

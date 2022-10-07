@@ -5,5 +5,6 @@ year: 2018
 where: "on Scrum.org"
 link: "https://www.scrum.org/user/360947"
 weight: 120
+icon: "/images/scrum.png"
 ---
 Fundamental level of Scrum mastery, including concepts of applying Scrum.

@@ -5,3 +5,29 @@
 .profile {
     font-size: inherit;
 }
+
+.profile-sec {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 5em;
+}
+
+.my-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.my-icon {
+    height: 3em;
+    width: 3em;
+    margin-right: 1em;
+    display: flex;
+}
+
+.my-icon img {
+    max-height: 3em;
+    max-width: 3em;
+    margin: auto;
+}

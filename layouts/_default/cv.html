@@ -1,7 +1,15 @@
 {{- define "main" }}
     <div class="cv">
 
-        {{- partial "index_profile.html" . -}}
+        <div class="profile-sec">
+            <div class="profile_inner">
+
+                <h1>{{ site.Params.profileMode.title | default site.Title | markdownify }}</h1>
+                <span>{{ site.Params.profileMode.subtitle | markdownify }}</span>
+            </div>
+        </div>
+
+        <br/>
 
         <h2>Skills</h2>
         <br/>
@@ -24,7 +32,5 @@
         <br/>
 
     </div>
-
-    {{.Content}}
 
 {{- end }}{{- /* end main */ -}}

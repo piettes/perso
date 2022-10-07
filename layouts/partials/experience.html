@@ -1,9 +1,18 @@
 {{- range site.Pages -}}
     {{ if and (.IsPage) (eq .Type "experiences")}}
-        <b>{{.Title}} @ {{.Params.company}}</b>
-        <br/>
-        {{.Params.dates}}, {{.Params.place}}
-        <br/>
-        <br/>
+        <article class="post-entry">
+            <div class="my-flex">
+                <div class="my-icon">
+                    <img src="{{.Params.icon  | absURL }}" alt="icon for {{.Params.company}} "/>
+                </div>
+                <div>
+                    <b>{{.Title}} @ {{.Params.company}}</b>
+                    <br/>
+                    {{.Params.dates}}, {{.Params.place}}
+                    <br/>
+                </div>
+            </div>
+            <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+        </article>
     {{end}}
 {{end}}

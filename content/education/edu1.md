@@ -4,6 +4,8 @@ tags: ["C", "Networks", "Java", "C++"]
 year: 2009 - 2011
 where: "Grenoble, France"
 weight: 140
+school: "National Polytechnic Institute of Grenoble - Phelma/Ensimag"
+icon: "/images/ginp.png"
 ---
 National Polytechnic Institute of Grenoble - Phelma/Ensimag
 

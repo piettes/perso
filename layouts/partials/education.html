@@ -1,8 +1,16 @@
 {{- range site.Pages -}}
     {{ if and (.IsPage) (eq .Type "education")}}
-        {{.Params.year}} <b>{{.Title}}</b> {{.Params.where}}
-        <br/>
-            {{.Content}}
-        <br/>
+        <article class="post-entry">
+            <div class="my-flex">
+                <div class="my-icon">
+                    <img src="{{.Params.icon  | absURL }}" alt="icon for {{.Params.school}} "/>
+                </div>
+                <div>
+                    <b>{{.Title}}</b>
+                    <br/>
+                    {{.Params.year}} - {{.Params.school}}
+                </div>
+                <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+        </article>
     {{end}}
 {{end}}
