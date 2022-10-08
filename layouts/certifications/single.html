@@ -12,6 +12,12 @@
                     {{ .Description }}
                 </div>
             {{- end }}
+
+            {{ if .Params.school }}{{.Params.school}},{{end}} on {{.Params.where}}
+
+            <br/>
+            <a class="my-link" href="{{.Params.link}}" target="_blank">Link</a>
+
             {{- if not (.Param "hideMeta") }}
                 <div class="post-meta">
                     {{- partial "post_meta.html" . -}}
@@ -20,10 +26,6 @@
                     {{- partial "post_canonical.html" . -}}
                 </div>
             {{- end }}
-
-            <a class="my-link" target="_blank" href="{{.Params.link}}">{{.Params.company}}</a><br/>
-
-
         </header>
         {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
         {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
@@ -38,9 +40,6 @@
                 {{- else }}{{ .Content }}{{ end }}
             </div>
         {{- end }}
-
-        {{.Params.place}}<br/>
-        {{.Params.dates}}
 
         <footer class="post-footer">
             {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}

@@ -17,6 +17,7 @@
 .my-flex {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .my-icon {
@@ -30,4 +31,9 @@
     max-height: 3em;
     max-width: 3em;
     margin: auto;
+}
+
+.my-link {
+    color: rgba(59,130,246);
+    text-decoration: underline;
 }

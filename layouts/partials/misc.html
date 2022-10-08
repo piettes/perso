@@ -1,16 +1,15 @@
 {{- range site.Pages -}}
-    {{ if and (.IsPage) (eq .Type "experiences")}}
+    {{ if and (.IsPage) (eq .Type "misc")}}
         <article class="post-entry">
             <div class="my-flex">
                 <div class="my-icon">
-                    <img src="{{.Params.icon  | absURL }}" alt="icon for {{.Params.company}} "/>
+                    <img src="{{.Params.icon  | absURL }}" alt="icon for {{.Params.entity}} "/>
                 </div>
                 <div>
-                    <b>{{.Title}} @ {{.Params.company}}</b>
+                    <b>{{.Title}}</b>
                     <br/>
                     {{.Params.description}}
                     <br/>
-                    {{.Params.dates}}
                 </div>
             </div>
             <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>

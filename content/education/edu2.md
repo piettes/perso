@@ -1,6 +1,6 @@
 ---
 title: "Bachelor of Science"
-tags: ["C", "Electronics", "Assembly", "FPGA"]
+tags: ["C", "Electronics", "Assembly", "FPGA", "Physics", "Mathematics"]
 year: 2008 - 2009
 where: "Grenoble, France"
 weight: 150

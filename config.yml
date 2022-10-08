@@ -3,6 +3,7 @@ languageCode: en-us
 title: Stéphane Piette
 theme: "PaperMod"
 params:
+  defaultTheme: light
   profileMode:
     enabled: true
     title: Stéphane Piette
@@ -25,8 +26,4 @@ menu:
     - identifier: CV
       name: CV
       url: /cv/
-      weight: 15
-    - identifier: cert
-      name: cert
-      url: /certifications/
       weight: 15

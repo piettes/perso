@@ -1,6 +1,6 @@
 ---
 title: "Master of Engineering - Distributed Systems and Networks"
-tags: ["C", "Networks", "Java", "C++"]
+tags: ["C", "Networks", "Java", "C++", "Concurrent Programming"]
 year: 2009 - 2011
 where: "Grenoble, France"
 weight: 140

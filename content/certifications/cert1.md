@@ -2,7 +2,7 @@
 title: "Deep Learning Specializations"
 tags: ["Deep learning"]
 year: 2018
-where: "on coursera.org"
+where: "coursera.org"
 link: "https://www.coursera.org/user/133bf2bb7b30d4196056c94568635e85"
 weight: 100
 icon: "/images/coursera.png"

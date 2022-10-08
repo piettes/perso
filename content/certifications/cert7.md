@@ -1,10 +1,13 @@
 ---
-title: "Principles of Reactive Programming with Scala"
+title: "Functional and reactive programming with Scala"
 tags: ["Scala", "Akka"]
-year: 2014
-where: "EPFL, on Coursera.org"
-link: ""
+year: 2013
+where: "Coursera.org"
+school: "École Polytechnique Fédérale de Lausanne"
 weight: 160
 icon: "/images/coursera.png"
+link: "/pdf/CourseraReactive.pdf"
 ---
-Learned more about functional, event-driven, scalable and responsive programming with Scala.
+This advanced course teaches principles of reactive programming using Scala: how to write composable software that is event- driven, scalable under load, resilient and responsive in the presence of failures. Concepts covered include monads, futures, observables and actors.
+
+Original course from École Polytechnique Fédérale de Lausanne, created by Martin Odersky.
