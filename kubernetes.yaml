@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stephanepiette
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: stephanepiette
+  template:
+    metadata:
+      labels:
+        name: stephanepiette
+    spec:
+      containers:
+        - name: stephanepiette
+          image: piettes/repo:me
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: docker-hub-cred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: stephanepiette-service
+spec:
+  ports:
+    - name: http80
+      port: 80
+      protocol: TCP
+      targetPort: 80
+  selector:
+    name: stephanepiette
+  type: ClusterIP
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: stephanepiette-ingresss
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/issuer: letsencrypt-issuer
+spec:
+  tls:
+    - hosts:
+        - "stephanepiette.com"
+      secretName: tls-stephanepiette-com-secret-2
+  rules:
+    - host: stephanepiette.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: stephanepiette-service
+                port:
+                  number: 80

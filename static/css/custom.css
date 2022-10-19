@@ -31,6 +31,8 @@
     max-height: 3em;
     max-width: 3em;
     margin: auto;
+    width:48px;
+    object-fit: contain;
 }
 
 .my-link {
