@@ -7,7 +7,7 @@ params:
   profileMode:
     enabled: true
     title: Stéphane Piette
-    subtitle: "Software Engineer"
+    subtitle: "Software Architect"
     subtitle2: "Berlin, Germany"
   socialIcons:
     - name: stackoverflow
