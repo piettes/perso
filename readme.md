@@ -7,7 +7,7 @@ Dev
 Build
     
     hugo
-    docker build . -t piettes/repo:me
+    docker build . -t piettes/repo:me --no-cache=true --platform=linux/amd64
 
 Test
 
